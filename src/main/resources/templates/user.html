@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css" type="text/css">
+    <title>Document</title>
+</head>
+<body >
+    <div data-th-object="${user}" style="text-align: center;">
+
+        <h1>User Details</h1>
+
+        <p>
+        <strong><u>User ID:</u></strong>
+        <p data-th-text="*{ID}"></p>
+        </p>
+
+    
+        <p>
+            <strong><u>Username:</u></strong>
+        <p data-th-text="*{userName}"></p>
+        </p>
+
+    
+        <p>
+            <strong><u>Password:</u></strong>
+        <p data-th-text="*{password}"></p>
+        </p>
+
+        <p>
+            <strong><u>Email:</u></strong>
+        <p data-th-text="*{email}"></p>
+        </p>
+
+    </div>
+
+    <div class="signup">
+        <a href="/home" class="button">Back to Home</a>
+    </div>
+    
+    <div class="signup">
+        <a href="/userlist" class="button">Back to User List</a>
+    </div>
+
+</body>
+</html>

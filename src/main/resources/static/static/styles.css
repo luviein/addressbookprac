@@ -1,34 +1,45 @@
 h1{
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-.signup{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .signup{
     text-align: center; 
-    border-style: groove;
-    padding: 10px;
+    padding: 20px 10px 20px;
 
 }
 
+.plain{
+    text-align: center; 
+    padding: 25px 10px 25px;
+
+}
       
 .button{
     background-color: #e485fc;
-      color: rgb(0, 0, 0);
-      padding: 14px 28px;
-      font-size: 16px;
-      cursor: grab;
-      text-align: center;
-      border-radius: 15%;
+    color: rgb(0, 0, 0);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: grab;
+    text-align: center;
+    border-radius: 15%;
+    margin: 20px;
+    text-decoration: none;
+    
+}
 
+.success{
+    color:forestgreen;
+    text-align: center;
 
-      
+}
 
-      
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
 
- 
+td{
+    text-align: center;
+    vertical-align: center;
 }

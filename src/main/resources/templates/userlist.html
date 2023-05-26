@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var password;
+        var pass1="12345";
+        password=prompt("Enter password to view page", " ");
+        if(password==pass1){
+            alert("Success, click ok to continue.");
+        }else{
+            window.location="/userlist";
+        }
+    </script>
+    <style>
+        div{
+            padding: 50px 0;
+            padding: 20px 48% 40px;
+
+        }
+    </style>
+    <h1>User List</h1>
+    <div>
+        <table >
+    
+            <tr th:each="info : ${allinfo}"> 
+                <td >
+                    <a data-th-href="@{'/user/'+${info.ID}}" data-th-text="${info.userName}" style="justify-content: center;">
+                </td>
+    
+            </tr>
+          
+        </table>
+    
+
+    </div>
+    
+    <div class="signup">
+        <a href="/home" class="button">Back to Home</a>
+    </div>
+
+</body>
+</html>

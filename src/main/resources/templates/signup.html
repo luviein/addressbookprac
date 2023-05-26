@@ -17,18 +17,18 @@
             <p>
                 Name:
                 <input type="text" data-th-field="*{userName}"/> <br>
-            <span class="error" data-th-if="${#fields.hasErrors('userName')}" data-th-errors="*{userName}" style="color:red; background-color: dimgray;"></span>
+            <span class="error" data-th-if="${#fields.hasErrors('userName')}" data-th-errors="*{userName}" style="color:red; background-color: rgb(184, 184, 184);"></span>
             </p>
     
             <p>
                 Password:
                 <input type="password" data-th-field="*{password}" minlength="8"> <br>
-            <span class="error" data-th-if="${#fields.hasErrors('password')}" data-th-errors="*{password}" style="color:red; background-color: dimgray;"></span>
+            <span class="error" data-th-if="${#fields.hasErrors('password')}" data-th-errors="*{password}" style="color:red; background-color: rgb(184, 184, 184);"></span>
             </p>
             <p>
                 Email:
                 <input type="text" data-th-field="*{email}"/> <br>
-            <span class="error" data-th-if="${#fields.hasErrors('email')}" data-th-errors="*{email}" style="color:red; background-color: dimgray;"></span>
+            <span class="error" data-th-if="${#fields.hasErrors('email')}" data-th-errors="*{email}" style="color:red; background-color: rgb(184, 184, 184);"></span>
             </p>
             <!-- <p>
                 Do you want our newsletter?
@@ -39,6 +39,10 @@
     
             <button type="submit" value="signup">Sign Up</button>
         </form>
+    </div>
+
+    <div class="signup">
+        <a href="/home" class="button">Back to Home</a>
     </div>
      
 </body>

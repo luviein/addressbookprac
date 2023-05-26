@@ -1,12 +1,13 @@
 package com.example.addressbook.model;
 
+import java.io.Serializable;
 import java.util.Random;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
-public class Info {
+public class Info implements Serializable {
     @NotNull(message="Name cannot be empty")
     @Size(min=5, max=15, message="Name should be between 5-15 characters")
     private String userName;
