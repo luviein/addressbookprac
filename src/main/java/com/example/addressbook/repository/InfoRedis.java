@@ -17,7 +17,7 @@ public class InfoRedis {
     @Autowired
     RedisTemplate<String,Object> template;
 
-    public void saveInfo(Info userInfo, Model model){
+    public void saveInfo(Info userInfo){
         template.opsForHash().put(USER_ID, userInfo.getID(), userInfo);
         // model.addAttribute("info", userInfo);
     }

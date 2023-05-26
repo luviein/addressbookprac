@@ -40,7 +40,7 @@ public class MyController {
         if(bindingResult.hasErrors()){
             return "signup";
         }
-        repository.saveInfo(userInfo, model);
+        repository.saveInfo(userInfo);
         model.addAttribute("successMessage", "You have successfully signed up.");
         return "save";
     }
