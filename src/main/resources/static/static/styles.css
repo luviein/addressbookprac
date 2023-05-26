@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+}
+
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup{
+    text-align: center; 
+    border-style: groove;
+    padding: 10px;
+
+}
+
+      
+.button{
+    background-color: #e485fc;
+      color: rgb(0, 0, 0);
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: grab;
+      text-align: center;
+      border-radius: 15%;
+
+
+      
+
+      
+
+ 
+}
