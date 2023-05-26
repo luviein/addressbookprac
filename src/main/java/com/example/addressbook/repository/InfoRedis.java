@@ -19,7 +19,7 @@ public class InfoRedis {
 
     public void saveInfo(Info userInfo, Model model){
         template.opsForHash().put(USER_ID, userInfo.getID(), userInfo);
-        model.addAttribute("info", userInfo);
+        // model.addAttribute("info", userInfo);
     }
 
     public List<Info> getAllInfo(){

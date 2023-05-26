@@ -13,7 +13,7 @@
     <h1>Sign Up</h1>
 
     <div class="signup" >
-        <form data-th-action="@{/signup/save}" data-th-object="${info}" method="POST"><!-- object is from model in controller -->
+        <form data-th-action="@{/signup/save}" data-th-object="${info}" method="POST"><!-- object is from model class -->
             <p>
                 Name:
                 <input type="text" data-th-field="*{userName}"/> <br>
