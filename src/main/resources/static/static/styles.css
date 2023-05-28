@@ -30,7 +30,12 @@ h1{
     border-radius: 15%;
     margin: 20px;
     text-decoration: none;
+    transition-property: background-color 4s ease-out;
     
+}
+
+.button:hover{
+    background-color: rgb(154, 88, 216);
 }
 
 .success{
